@@ -26,7 +26,7 @@ The hover effects didnt present a challenge for me as i had done a lot of them d
 
 - **Advanced CSS Properties**: Application of the flexbox and grid techniques are areas that i really need to work on
 - **Code Optimization**: 
-
+Check animation performance. Practice flexbox and grid layouts to create better responsive designs.
 - **Creative Design Choices**:
 
 #### Overall Learning Experience

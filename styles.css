@@ -120,58 +120,60 @@ img {
     margin-top: 2.3rem; /* Adds top margin for the profile stats section*/
 }
 
+/* layout for profile statistics*/
 .profile-stats li {
-    display: inline-block;
+    display: inline-block; /* dispaly the items horizontally*/
     font-size: 1.6rem;
-    line-height: 1.5;
-    margin-right: 4rem;
-    cursor: pointer;
+    line-height: 1.5; /*line height set to 1.5*/
+    margin-right: 4.5rem;
+    cursor: pointer; 
 }
-
+/* list of items with the class 'profile-stats', if it happens to be the last item in that listthere don't put any extra space to its right. 
+the last item to sit right next to the previous one without any unnecessary space."*/
 .profile-stats li:last-of-type {
-    margin-right: 0;
+    margin-right: 0; 
 }
 
 .profile-bio {
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.5;
-    margin-top: 2.3rem;
+    line-height: 1.5; /*line height for better spacing*/
+    margin-top: 2.3rem;/*Top margin to seperate content*/
 }
 
 .profile-real-name,
 .profile-stat-count,
 .profile-edit-btn {
-    font-weight: 600;
+    font-weight: 600; /*font weight set to 600 for bold text*/
 }
 
-/* Gallery Section */
+/* Gallery styling Section */
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -1rem -1rem;
-    padding-bottom: 3rem;
+    display: flex;  /*Flexbox to arrange the items*/
+    flex-wrap: wrap; /*Items will wrap to the next line if necessary*/
+    margin: -1rem -1rem; /* negative margin will counteract the default spacing*/
+    padding-bottom: 3rem; 
 }
 
 .gallery-item {
-    position: relative;
-    flex: 1 0 22rem;
+    position: relative;/*positioning of this element will be based on its normal position in the document flow, but it can be adjusted relative to itself.*/
+    flex: 1 0 22rem; /*allow flexibilty in item size while maintaining base size*/
     margin: 1rem;
     color: #fff;
-    cursor: pointer;
+    cursor: pointer; /*cursor set to pointer for interactive feel*/
 }
-
+/*Styling for the gallery items on hover*/
 .gallery-item:hover .gallery-item-info,
 .gallery-item:focus .gallery-item-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    display: flex; /* make info section visible on hover*/
+    justify-content: center; /* Content will be centred horizontally*/
+    align-items: center; /* Content will be centred vertically*/
+    position: absolute; /*positioning of this element will be based on its nearest positioned ancestor*/
+    top: 0; /* this places the info section at the top of the item*/
+    width: 100%; /*occupy the full width od the item*/
+    height: 100%; /*occupy the full height of the item*/
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black background for the overlay effect*/
 }
 
 .gallery-item-info {
