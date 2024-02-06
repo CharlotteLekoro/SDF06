@@ -177,36 +177,37 @@ the last item to sit right next to the previous one without any unnecessary spac
 }
 
 .gallery-item-info {
-    display: none;
+    display: none; /*Hide the gallery info item in this section*/
 }
 
-.gallery-item-info li {
-    display: inline-block;
+.gallery-item-info li { /*List of items within gallery item info*/
+    display: inline-block; /*This is to display theitems horizontally*/
     font-size: 1.7rem;
     font-weight: 600;
 }
-
+/* Section to set the margin to the right*/
 .gallery-item-likes {
     margin-right: 2.2rem;
 }
 
 .gallery-item-type {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    position: absolute; /*Position type label absolutely*/
+    top: 1rem; /*Type label placed 1 rem from the top*/
+    right: 1rem; /*type label placed 1rem from the right*/
     font-size: 2.5rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);/*text shadow for better visibility*/
 }
 
 .fa-clone,
 .fa-comment {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Clone and comment icons rotate horizontally*/
 }
 
+/*This is to ensure gallery items fit within their containers*/
 .gallery-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /*Ensure the images covers the entire container*/
 }
 
 /* Loader */
