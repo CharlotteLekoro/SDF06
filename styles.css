@@ -195,7 +195,7 @@ the last item to sit right next to the previous one without any unnecessary spac
     top: 1rem; /*Type label placed 1 rem from the top*/
     right: 1rem; /*type label placed 1rem from the right*/
     font-size: 2.5rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);/*text shadow for better visibility*/
+    text-shadow: 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.1);/*text shadow for better visibility*/
 }
 
 .fa-clone,
@@ -210,21 +210,20 @@ the last item to sit right next to the previous one without any unnecessary spac
     object-fit: cover; /*Ensure the images covers the entire container*/
 }
 
-/* Loader */
-
+/*The loader's dimensions*/
 .loader {
     width: 5rem;
     height: 5rem;
     border: 0.6rem solid #999;
-    border-bottom-color: transparent;
-    border-radius: 50%;
+    border-bottom-color: transparent; /*To hide thebottom border to create the spinning effect*/
+    border-radius: 50%; /*This creates the circular shape*/
     margin: 0 auto;
-    animation: loader 500ms linear infinite;
+    animation: loader 500ms linear infinite; /*Animation for the spinning effect
 }
 
 /* Media Query */
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 40rem) { /*Layout to adjust for small screens*/
     .profile {
         display: flex;
         flex-wrap: wrap;
@@ -232,17 +231,19 @@ the last item to sit right next to the previous one without any unnecessary spac
     }
 
     .profile::after {
-        display: none;
+        display: none; /* Hides the pseudo-element*/
     }
 
+     /*layout for profile elements*/
     .profile-image,
     .profile-user-settings,
     .profile-bio,
     .profile-stats {
-        float: none;
+        float: none; /*Resets the float property*/
         width: auto;
     }
-
+  
+    /*to adjust the profile image size*/
     .profile-image img {
         width: 7.7rem;
     }
@@ -258,7 +259,7 @@ the last item to sit right next to the previous one without any unnecessary spac
         font-size: 2.2rem;
     }
 
-    .profile-edit-btn {
+    .profile-edit-btn { /*adjust the edit button*/
         order: 1;
         padding: 0;
         text-align: center;
@@ -293,6 +294,7 @@ the last item to sit right next to the previous one without any unnecessary spac
         border-bottom: 0.1rem solid #dadada;
     }
 
+     /*styles the individual statistics*/
     .profile-stats li {
         font-size: 1.4rem;
         flex: 1;
@@ -304,7 +306,7 @@ the last item to sit right next to the previous one without any unnecessary spac
     }
 }
 
-/* Spinner Animation */
+/* Spinner Animation - rotate the loader 360 degrees */
 
 @keyframes loader {
     to {
@@ -312,13 +314,7 @@ the last item to sit right next to the previous one without any unnecessary spac
     }
 }
 
-/*
 
-The following code will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
-
-*/
 
 @supports (display: grid) {
     .profile {
@@ -380,4 +376,3 @@ Remove or comment-out the code block below to see how the browser will fall-back
         }
     }
 }
-
